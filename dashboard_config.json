@@ -1,0 +1,222 @@
+{
+  "projects": {
+    "zge": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "backend",
+          "label": "后端 8000",
+          "cwd": "D:\\py project\\zge\\backend",
+          "command": "python main.py",
+          "url": "http://127.0.0.1:8000/docs"
+        },
+        {
+          "id": "frontend",
+          "label": "前端 5173",
+          "cwd": "D:\\py project\\zge\\frontend",
+          "command": "npm run dev -- --host 127.0.0.1",
+          "url": "http://127.0.0.1:5173"
+        }
+      ]
+    },
+    "czsc": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "version",
+          "label": "版本检查",
+          "cwd": "D:\\py project\\czsc",
+          "command": "python -c \"import czsc; print(getattr(czsc, '__version__', 'czsc imported'))\""
+        },
+        {
+          "id": "tests",
+          "label": "运行测试",
+          "cwd": "D:\\py project\\czsc",
+          "command": "python -m pytest tests -q"
+        }
+      ]
+    },
+    "wyckoff_trading": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "backend",
+          "label": "后端 8001",
+          "cwd": "D:\\py project\\wyckoff-trading\\backend",
+          "command": "python -m uvicorn app.main:app --host 127.0.0.1 --port 8001 --reload",
+          "url": "http://127.0.0.1:8001/docs"
+        },
+        {
+          "id": "frontend",
+          "label": "前端 5174",
+          "cwd": "D:\\py project\\wyckoff-trading\\frontend",
+          "command": "npm run dev -- --host 127.0.0.1 --port 5174",
+          "url": "http://127.0.0.1:5174"
+        }
+      ]
+    },
+    "duanxian_t": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "web",
+          "label": "Web 5050",
+          "cwd": "D:\\py project\\duanxianT",
+          "command": "python web_app.py",
+          "url": "http://127.0.0.1:5050"
+        }
+      ]
+    },
+    "shortais": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "web",
+          "label": "Web 5678",
+          "cwd": "D:\\py project\\shortais",
+          "command": "python app.py",
+          "url": "http://127.0.0.1:5678"
+        }
+      ]
+    },
+    "stock_tracker": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "streamlit",
+          "label": "Streamlit 8501",
+          "cwd": "D:\\py project\\stock_tracker",
+          "command": "python -m streamlit run stock_tracker_app.py --server.port 8501 --server.address localhost",
+          "url": "http://127.0.0.1:8501"
+        }
+      ]
+    },
+    "valuecell": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "launcher",
+          "label": "一键启动",
+          "cwd": "D:\\py project\\valuecell",
+          "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\start.ps1",
+          "url": ""
+        }
+      ]
+    },
+    "newsnow": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "dev",
+          "label": "开发服务 5175",
+          "cwd": "D:\\py project\\newsnow",
+          "command": "npm run dev -- --host 127.0.0.1 --port 5175",
+          "url": "http://127.0.0.1:5175"
+        }
+      ]
+    },
+    "daily_stock_analysis": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "dry_run",
+          "label": "Dry run",
+          "cwd": "D:\\py project\\daily_stock_analysis",
+          "command": "python main.py --dry-run --no-notify"
+        },
+        {
+          "id": "full",
+          "label": "完整分析",
+          "cwd": "D:\\py project\\daily_stock_analysis",
+          "command": "python main.py"
+        },
+        {
+          "id": "market",
+          "label": "大盘复盘",
+          "cwd": "D:\\py project\\daily_stock_analysis",
+          "command": "python main.py --market-review"
+        }
+      ]
+    },
+    "a_share_platform": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "dev",
+          "label": "开发服务 5176",
+          "cwd": "D:\\py project\\a-share-platform-stocks-selection",
+          "command": "npm run dev -- --host 127.0.0.1 --port 5176",
+          "url": "http://127.0.0.1:5176"
+        }
+      ]
+    },
+    "finrobot": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "demo",
+          "label": "Agent demo",
+          "cwd": "D:\\py project\\FinRobot",
+          "command": "python agent_builder_demo.py"
+        },
+        {
+          "id": "test",
+          "label": "模块测试",
+          "cwd": "D:\\py project\\FinRobot",
+          "command": "python test_module.py"
+        }
+      ]
+    },
+    "nine_dimension_invest": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "streamlit",
+          "label": "Streamlit 8502",
+          "cwd": "D:\\py project\\nine_dimension_invest",
+          "command": "python -m streamlit run dashboard.py --server.port 8502 --server.address localhost",
+          "url": "http://127.0.0.1:8502"
+        }
+      ]
+    },
+    "czsc_skills": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "list",
+          "label": "列出 Skills",
+          "cwd": "D:\\py project\\czsc_skills",
+          "command": "powershell -NoProfile -Command \"Get-ChildItem -Recurse -Filter SKILL.md | Select-Object -ExpandProperty FullName\""
+        }
+      ]
+    },
+    "zettaranc_skill": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "show",
+          "label": "查看入口",
+          "cwd": "D:\\py project\\zettaranc-skill",
+          "command": "python -c \"from pathlib import Path; print(Path('SKILL.md').read_text(encoding='utf-8')[:3200])\""
+        }
+      ]
+    },
+    "uzi_skill": {
+      "config_values": {},
+      "commands": [
+        {
+          "id": "quick",
+          "label": "示例分析",
+          "cwd": "D:\\py project\\UZI-Skill",
+          "command": "python run.py 贵州茅台"
+        },
+        {
+          "id": "tests",
+          "label": "运行测试",
+          "cwd": "D:\\py project\\UZI-Skill",
+          "command": "python -m pytest -q"
+        }
+      ]
+    }
+  }
+}
